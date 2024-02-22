@@ -1,15 +1,21 @@
 import "../styles/Results.css";
 import { Link } from "react-router-dom";
 import ResultTable from "./ResultTable";
+import { useDispatch } from "react-redux";
+import { resetAllAction } from "../redux/question_reducer";
+import { resetResultAction } from "../redux/result_reducer";
 
 const Result = () => {
+  const dispatch = useDispatch();
+
   const onRestart = () => {
-    console.log("Restart");
+    dispatch(resetAllAction());
+    dispatch(resetResultAction());
   };
   return (
     <>
       <div className="container">
-        <h1 className="title text-light">Quiz Application</h1>
+        <h1 className="title text-light">Mai Banunga Crorepati</h1>
 
         <div className="result flex-center">
           <div className="flex">
