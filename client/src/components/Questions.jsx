@@ -1,17 +1,14 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import Data from "../database/Data";
 
 const Questions = () => {
   //   const [checked, setChecked] = useState(undefined);
 
   let question = Data[0];
-  useEffect(() => {
-    console.log(question);
-  }, [question]);
+  // useEffect(() => {
+  //   console.log(question);
+  // }, [question]);
 
-  const onSelect = () => {
-    console.log("radio");
-  };
   return (
     <>
       <div className="questions">
@@ -25,7 +22,6 @@ const Questions = () => {
                 value={false}
                 name="options"
                 id={`q${i}-option`}
-                onChange={onSelect()}
               />
 
               <label className="text-primary" htmlFor={`q${i}-option`}>

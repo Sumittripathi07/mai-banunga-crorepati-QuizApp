@@ -7,6 +7,10 @@ import "../styles/Main.css";
 const Main = () => {
   const inputRef = useRef(null);
 
+  const myCLick = () => {
+    console.log(inputRef);
+  };
+
   return (
     <div className="container">
       <h1 className="title text-light">Mai Banunga Crorepati</h1>
@@ -31,7 +35,7 @@ const Main = () => {
       </form>
 
       <div className="start">
-        <Link className="btn" to={"/quiz"}>
+        <Link className="btn" to={"/quiz"} onClick={myCLick}>
           Start Quiz
         </Link>
       </div>
