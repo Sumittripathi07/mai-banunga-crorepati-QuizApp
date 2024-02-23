@@ -18,6 +18,10 @@ const Questions = ({ onChecked }) => {
 
   const dispatch = useDispatch();
 
+  const {
+    result: { userId },
+  } = useSelector((state) => state);
+
   useEffect(() => {
     dispatch(updateResult({ trace, checked }));
   }, [checked]);
@@ -34,11 +38,13 @@ const Questions = ({ onChecked }) => {
 
   return (
     <>
+      <h1 className="welcome">
+        Aapka swagat hai <span style={{ color: "#0dff92" }}>{userId}</span>!
+      </h1>
       <div className="questions">
         <h2 className="text-light">
           {questions?.id}. {questions?.question}
         </h2>
-
         <ul key={questions?.id}>
           {questions?.options.map((q, i) => (
             <li key={i}>

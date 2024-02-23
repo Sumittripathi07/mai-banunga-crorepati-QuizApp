@@ -45,16 +45,15 @@ html {
 }
 
 .container .questions {
-  padding: 3em;
+  padding: 1.5em;
 }
 
-/* 
-.container .questions .qid{
-  padding: .2em .7em;
+.container .questions .qid {
+  padding: 0.2em 0.7em;
   color: #222222;
-  background-color: #0DFF92;
+  background-color: #0dff92;
   border-radius: 50px;
-} */
+}
 
 .container .grid {
   margin-top: 3em;
@@ -168,4 +167,11 @@ input[type="radio"]:checked ~ .text-primary {
 
 .checked::before {
   background: var(--primary-color);
+}
+
+.welcome {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: #aaaaaa;
+  text-align: center;
 }

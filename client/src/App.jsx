@@ -4,11 +4,16 @@ import Quiz from "./components/Quiz.jsx";
 import Result from "./components/Result.jsx";
 import "./App.css";
 import { CheckUserExist } from "./helper/helper";
+import About from "./components/About.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
   {
     path: "/quiz",
