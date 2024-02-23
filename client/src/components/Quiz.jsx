@@ -13,7 +13,7 @@ export default function Quiz() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log(result);
+    // console.log(result);
   });
 
   function onNext() {
@@ -25,6 +25,7 @@ export default function Quiz() {
         dispatch(PushAnswer(check));
       }
     }
+    setChecked(undefined);
   }
 
   function onPrev() {
