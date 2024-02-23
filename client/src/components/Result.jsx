@@ -40,7 +40,7 @@ const Result = () => {
         <div className="result flex-center">
           <div className="flex">
             <span>Username</span>
-            <span className="bold">Sumit</span>
+            <span className="bold">{userId}</span>
           </div>
           <div className="flex">
             <span>Total Quiz Points : </span>
@@ -51,7 +51,7 @@ const Result = () => {
             <span className="bold"> {queue.length} </span>
           </div>
           <div className="flex">
-            <span>Total Attempts : </span>
+            <span>Total Attempted : </span>
             <span className="bold"> {attempts || 0} </span>
           </div>
           <div className="flex">
@@ -77,7 +77,7 @@ const Result = () => {
 
         <div className="container">
           {/* result table */}
-          <ResultTable />
+          {/* <ResultTable /> */}
         </div>
       </div>
     </>

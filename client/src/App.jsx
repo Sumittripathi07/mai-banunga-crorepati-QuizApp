@@ -3,7 +3,7 @@ import Main from "./components/Main";
 import Quiz from "./components/Quiz.jsx";
 import Result from "./components/Result.jsx";
 import "./App.css";
-import { CheckUserExist } from "./helper/helper.js";
+import { CheckUserExist } from "./helper/helper";
 
 const router = createBrowserRouter([
   {
