@@ -25,6 +25,7 @@ const Main = () => {
       <ol>
         <li>10 points is awarded for the correct answer.</li>
         <li>You can review and change answers before the quiz finish.</li>
+        <li>Passing Percentage is 50</li>
         <li>The result will be declared at the end of the quiz.</li>
       </ol>
 
