@@ -11,7 +11,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd MBC-QuizApp
+  cd MBC-QuizApp568
   cd client
 ```
 
