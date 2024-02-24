@@ -41,4 +41,4 @@ Start the server
 
 ## License
 
-Copyright (c) [2023] [Sumit Tripathi](https://github.com/Sumittripathi07)
+Copyright (c) [2024] [Sumit Tripathi](https://github.com/Sumittripathi07)
