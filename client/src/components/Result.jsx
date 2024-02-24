@@ -4,7 +4,7 @@ import ResultTable from "./ResultTable";
 import { useDispatch, useSelector } from "react-redux";
 import { resetAllAction } from "../redux/question_reducer";
 import { resetResultAction } from "../redux/result_reducer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import {
   attempts_Number,
@@ -32,6 +32,15 @@ const Result = () => {
     dispatch(resetAllAction());
     dispatch(resetResultAction());
   };
+  const currData = {
+    name: userId,
+    attempts: `${attempts}`,
+    earnedPoints: `${earnedPoints}`,
+    result: `${flag ? "Passed" : "Failed"}`,
+  };
+
+  const allData = [currData];
+
   return (
     <>
       <div className="container">
@@ -75,10 +84,7 @@ const Result = () => {
           </Link>
         </div>
 
-        <div className="container">
-          {/* result table */}
-          {/* <ResultTable /> */}
-        </div>
+        <div className="container">{<ResultTable allData={allData} />}</div>
       </div>
     </>
   );

@@ -42,9 +42,9 @@ const Main = () => {
           Start Quiz
         </Link>
         &nbsp; &nbsp; &nbsp; &nbsp;
-        <Link className="btn" to={"/about"} onClick={startQuiz}>
+        {/* <Link className="btn" to={"/about"} onClick={startQuiz}>
           Group Details
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

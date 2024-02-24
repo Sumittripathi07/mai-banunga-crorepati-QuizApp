@@ -1,27 +1,34 @@
 // import React from 'react'
 
-const ResultTable = () => {
+const ResultTable = ({ allData }) => {
+  console.log(allData[0].result);
   return (
-    <div>
-      <table>
-        <thead className="table-header">
-          <tr className="table-row">
-            <td>Name</td>
-            <td>Attemps</td>
-            <td>Earn Points</td>
-            <td>Result</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr className="table-body">
-            <td>Sumit</td>
-            <td>03</td>
-            <td>100</td>
-            <td>Passed</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <>
+      {allData.map((item, i) => {
+        return (
+          <div key={i}>
+            <table>
+              <thead className="table-header">
+                <tr className="table-row">
+                  <td>Name</td>
+                  <td>Attemps</td>
+                  <td>Earn Points</td>
+                  <td>Result</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="table-body">
+                  <td>{item.name}</td>
+                  <td>{item.attempts}</td>
+                  <td>{item.earnedPoints}</td>
+                  <td>{item.result}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        );
+      })}
+    </>
   );
 };
 
