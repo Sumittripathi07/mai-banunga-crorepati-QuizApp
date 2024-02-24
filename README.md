@@ -11,11 +11,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-<<<<<<< HEAD
-  cd MBC-QuizApp568
-=======
-  cd MBC-QuizApp
->>>>>>> 47719ad48e37a3089ebcc92be3ae9924def999e1
+  cd mai-banunga-crorepati-QuizApp
   cd client
 ```
 
