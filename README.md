@@ -12,7 +12,6 @@ Go to the project directory
 
 ```bash
   cd mai-banunga-crorepati-QuizApp
-  cd client
 ```
 
 Install dependencies
